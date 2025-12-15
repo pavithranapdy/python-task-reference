@@ -20,14 +20,14 @@ for i in students:
   i["total"]= sum(i["marks"])             # sum the marks in each iteration
 
 # sort the latest list after total mark
-for i in range(len(students)):
+for i in range(len(students)):          # swap value x, y = y, x
     for j in range(len(students) - 1):
         if students[j]["total"] < students[j + 1]["total"]:             # compare the mark
             students[j], students[j + 1] = students[j + 1], students[j] # swap the mark value
 for i in range(len(students)):
-    students[i]["rank"] = i + 1
+    students[i]["rank"] = i + 1                           # and rank key in the students list
     if students[i]["total"] <= 400 and students[i]["total"] >= 300:
-        students[i]["category"]= "Good"
+        students[i]["category"]= "Good"                # and category key in the students list
     elif students[i]["total"] <= 450 and students[i]["total"] >= 400:
         students[i]["category"]= "Very Good"
     elif students[i]["total"] <= 500 and students[i]["total"] >= 450:
