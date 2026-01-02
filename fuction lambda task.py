@@ -86,18 +86,18 @@
 
 # print(reverse_string("python"))
 
-print("5.palindrome using Recursive Function ")
-p="mom"
-def reverse_string(s):
-    if len(s) == 0:
-        return s
-    return reverse_string(s[1:]) + s[0]
-reversvalue = reverse_string(p)
+# print("5.palindrome using Recursive Function ")
+# p=input("enter any word")
+# def reverse_string(s):
+#     if len(s) == 0:
+#         return s
+#     return reverse_string(s[1:]) + s[0]
+# reversvalue = reverse_string(p)
 
-if p == reversvalue:
-    print("string is palindrome")
-else:
-    print("string is not palindrome")
+# if p == reversvalue:
+#     print("string is palindrome eg. mom",p)
+# else:
+#     print("string is not palindrome",p)
 
 # print("6. Power of a number using Recursive Number")
 # def power(a, n):
@@ -106,3 +106,12 @@ else:
 #     return a * power(a, n-1)
 
 # print(power(2, 5))
+
+x = 62
+y = 62
+if x > y:
+    print("x is greater")
+elif y > x:
+    print("y is greater")
+else:
+    print("both are equal")

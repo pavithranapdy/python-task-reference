@@ -23,3 +23,12 @@ file = open("cmd.txt", "r+")
 print(file.read())
 file.write("New text")
 file.close()
+
+print("5.Rename")
+os.rename("cmd.txt", "data1.txt")
+
+print("6.Remove")
+os.remove("data1.txt")
+
+print("7.Make Directory")
+os.mkdir("MyFolder")
